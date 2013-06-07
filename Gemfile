@@ -7,6 +7,7 @@ gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 gem "fog", "~> 1.3.1"
+gem 'faker'
 
 group :production do
 	gem 'pg'
