@@ -8,6 +8,8 @@ gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 gem "fog", "~> 1.3.1"
 gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :production do
 	gem 'pg'
