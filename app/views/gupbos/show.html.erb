@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="span6 offset3">
+		<div class="well">
+			<%= image_tag @gupbo.image %>
+			<p>
+			  <%= @gupbo.comment %>
+			</p>
+			<p>
+			  <%= @gupbo.user.name %>
+			</p>
+			<% if current_user == @gupbo.user %>
+				<%= link_to 'Edit', edit_gupbo_path(@gupbo) %> |
+			<% end %>
+			<%= link_to 'Back', gupbos_path %>
+		</div>
+	</div>
+</div>

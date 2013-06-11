@@ -1,0 +1,17 @@
+<div class="box">
+	<%= link_to (image_tag gupbo.image), gupbo %>
+	<p class="comment">
+		<%= gupbo.comment %>
+	</p>
+	<p>
+		<strong>
+			Posted by <%= link_to gupbo.user.name, gupbo.user %>
+		</strong>
+	</p>
+	<% if current_user == gupbo.user %>
+		<p>
+			<%= link_to 'Edit', edit_gupbo_path(gupbo) %>
+			<%= link_to 'Destroy', gupbo, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</p>
+	<% end %>
+</div>

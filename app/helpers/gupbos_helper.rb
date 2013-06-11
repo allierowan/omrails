@@ -1,0 +1,2 @@
+module GupbosHelper
+end
