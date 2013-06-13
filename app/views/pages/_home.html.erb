@@ -1,13 +1,11 @@
 <% if user_signed_in? %>
-Welcome to your page!
+See what other people have been posting!
 <% else %>
 	<div class="hero-unit">
 
-		<h1>Welcome to One Month Rails!</h1>
+		<h1>Welcome to OBC: Online Book Club!</h1>
 		<p>
-			You've found the home page for the
-			<%= link_to "One Month Rails", "http://onemonthrails.com"%>
-			application.
+			This is an online book club project!
 		</p>
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>

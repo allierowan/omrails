@@ -45,7 +45,7 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.save
-        format.html { redirect_to @pin, notice: 'Pin was successfully created.' }
+        format.html { redirect_to @pin, notice: 'Thanks for letting us know what you are reading!' }
         format.json { render json: @pin, status: :created, location: @pin }
       else
         format.html { render action: "new" }
@@ -61,7 +61,7 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.update_attributes(params[:pin])
-        format.html { redirect_to @pin, notice: 'Pin was successfully updated.' }
+        format.html { redirect_to @pin, notice: 'You have updated your book!' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

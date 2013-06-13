@@ -10,6 +10,7 @@ gem "fog", "~> 1.3.1"
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'jquery-star-rating-rails'
 
 group :production do
 	gem 'pg'
